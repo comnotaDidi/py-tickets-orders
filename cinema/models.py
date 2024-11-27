@@ -99,8 +99,7 @@ class Ticket(models.Model):
     def validate_ticket(
             row: int,
             seat: int,
-            movie_session: MovieSession,
-            error_to_raise
+            movie_session: MovieSession
     ):
         for ticket_attr_value, ticket_attr_name, cinema_hall_attr_name in [
             (row, "row", "rows"),
